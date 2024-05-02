@@ -1,0 +1,40 @@
+body {
+  /* background: rgb(145, 63, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(145, 63, 251, 1) 0%,
+    rgba(252, 70, 187, 1) 100%
+  ); */
+
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+.heading {
+  font-family: sans-serif;
+  text-align: center;
+  color: black;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.game_posters {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.game_posters_img {
+  width: 25rem;
+  height: 15rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .game_posters_img {
+    width: 17rem;
+    height: 10rem;
+  }
+}
