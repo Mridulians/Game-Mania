@@ -77,7 +77,7 @@ const Weather = () => {
   };
 
   return (
-    <div className="container">
+    <div className="forecast">
       <div className="top_bar">
         <input type="text" placeholder="Search" className="cityInput" />
 

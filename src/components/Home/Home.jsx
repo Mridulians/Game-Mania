@@ -1,5 +1,6 @@
 import TicImg from "../../assets/tic.png";
 import MemoryImg from "../../assets/memory.png";
+import Weather from "../../assets/Weather.png"
 import "./Home.css";
 import { useNavigate } from "react-router-dom";
 
@@ -8,6 +9,12 @@ const Home = () => {
 
   const handleRoute = () => {
     navigate("/tic");
+  };
+  const handleRoute2 = () => {
+    navigate("/memory");
+  };
+  const handleRoute3 = () => {
+    navigate("/weather");
   };
 
   return (
@@ -21,13 +28,9 @@ const Home = () => {
           className="game_posters_img"
           onClick={handleRoute}
         />
-        <img src={MemoryImg} alt="" className="game_posters_img" />
-        <img src={MemoryImg} alt="" className="game_posters_img" />
-        <img src={MemoryImg} alt="" className="game_posters_img" />
-        <img src={MemoryImg} alt="" className="game_posters_img" />
-        <img src={MemoryImg} alt="" className="game_posters_img" />
-        <img src={MemoryImg} alt="" className="game_posters_img" />
-        <img src={MemoryImg} alt="" className="game_posters_img" />
+        <img src={MemoryImg} alt="" className="game_posters_img"   onClick={handleRoute2}/>
+        <img src={Weather} alt="" className="game_posters_img"   onClick={handleRoute3}/>
+        
       </div>
     </div>
   );

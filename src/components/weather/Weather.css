@@ -1,4 +1,4 @@
-.container {
+.forecast {
   width: 607px;
   /* height: 829px; */
   margin: auto;
@@ -95,7 +95,7 @@
 }
 
 @media screen and (max-width: 680px) {
-  .container {
+  .forecast {
     width: 500px;
   }
 
@@ -142,7 +142,7 @@
 }
 
 @media screen and (min-width: 300px) and (max-width: 500px) {
-  .container {
+  .forecast {
     width: 300px;
   }
 
